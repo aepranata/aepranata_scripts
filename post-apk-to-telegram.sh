@@ -13,7 +13,7 @@ notifit() {
 
 👤 *Author*: $COMMIT_AUTHOR
 🔖 *Commit*:
-[[$COMMIT_HASH] $LAST_COMMIT]($COMMIT_URL)
+[$COMMIT_HASH]($COMMIT_URL) $LAST_COMMIT
 
 📊 *Build Info*
 📁 Size: $APK_SIZE
