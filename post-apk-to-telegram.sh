@@ -1,7 +1,7 @@
 #!/bin/bash
 
 notifit() {
-    CAPTION="🚀 *Larisin CI Build*
+    CAPTION="🚀 *A³ CI Build*
 
 ━━━━━━━━━━━━━━━━━━
 📦 *App*: $APK_NAME
@@ -12,7 +12,8 @@ notifit() {
 ━━━━━━━━━━━━━━━━━━
 
 👤 *Author*: $COMMIT_AUTHOR
-🔖 *Commit*: [$COMMIT_HASH - $LAST_COMMIT]($COMMIT_URL)
+🔖 *Commit*:
+[[$COMMIT_HASH] $LAST_COMMIT]($COMMIT_URL)
 
 📊 *Build Info*
 📁 Size: $APK_SIZE
