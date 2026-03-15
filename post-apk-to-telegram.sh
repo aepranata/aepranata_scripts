@@ -4,7 +4,7 @@ notifit() {
     CAPTION="🚀 *Larisin CI Build*
 
 ━━━━━━━━━━━━━━━━━━
-📦 *App*: Larisin
+📦 *App*: $APK_NAME
 🌿 *Branch*: $GITHUB_REF_NAME
 🔢 *Build No*: $GITHUB_RUN_NUMBER
 🕒 *Build Time*: $BUILD_TIME
