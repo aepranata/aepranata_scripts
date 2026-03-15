@@ -12,10 +12,7 @@ notifit() {
 ━━━━━━━━━━━━━━━━━━
 
 👤 *Author*: $COMMIT_AUTHOR
-🔖 *Commit*: $COMMIT_HASH
-
-📝 *Last Commit*
-[$LAST_COMMIT]($COMMIT_URL)
+🔖 *Commit*: [$COMMIT_HASH - $LAST_COMMIT]($COMMIT_URL)
 
 📊 *Build Info*
 📁 Size: $APK_SIZE
