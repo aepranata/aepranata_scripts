@@ -1,27 +1,27 @@
 #!/bin/bash
 
 notifit() {
-    CAPTION="🚀 *A³ CI Build*
+    CAPTION="🚀 <b>A³ CI Build</b>
 
 ━━━━━━━━━━━━━━━━━━
-📦 *App*: $APK_NAME
-🌿 *Branch*: $GITHUB_REF_NAME
-🔢 *Build No*: $GITHUB_RUN_NUMBER
-🕒 *Build Time*: $BUILD_TIME
-⏱ *Duration*: $BUILD_DURATION
+📦 <b>App</b>: $APK_NAME
+🌿 <b>Branch</b>: $GITHUB_REF_NAME
+🔢 <b>Build No</b>: $GITHUB_RUN_NUMBER
+🕒 <b>Build Time</b>: $BUILD_TIME
+⏱ <b>Duration</b>: $BUILD_DURATION
 ━━━━━━━━━━━━━━━━━━
 
-👤 *Author*: $COMMIT_AUTHOR
-🔖 *Commit*:
-[$COMMIT_HASH]($COMMIT_URL) $LAST_COMMIT
+👤 <b>Author</b>: $COMMIT_AUTHOR
+🔖 <b>Commit</b>:
+[<a href=\"$COMMIT_URL\">$COMMIT_HASH</a>] $LAST_COMMIT
 
-📊 *Build Info*
+📊 <b>Build Info</b>
 📁 Size: $APK_SIZE
 ⚙️  CI: GitHub Actions"
 
     curl -F document=@$APK_PATH \
          -F chat_id="$TG_CHAT_ID" \
-         -F parse_mode=Markdown \
+         -F parse_mode=HTML \
          -F caption="$CAPTION" \
          https://api.telegram.org/bot$TG_BOT_TOKEN/sendDocument
 }
